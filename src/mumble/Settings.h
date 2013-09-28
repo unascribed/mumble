@@ -367,6 +367,10 @@ struct Settings {
 	/// If true settings in this structure require a client restart to apply fully
 	bool requireRestartToApply;
 
+	// Kick/Ban Reasons
+	bool bEnableRanKBMsgs;
+	QStringList qslKickBanReasons;
+
 	bool doEcho() const;
 	bool doPositionalAudio() const;
 
