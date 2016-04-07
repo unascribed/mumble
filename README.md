@@ -1,3 +1,13 @@
+# unascribed's fork notes
+* This fork is only known to work on Linux with Qt5. YMMV on any other operating system or with Qt4.
+* The patches were applied somewhat sloppily, as I have very little Qt or C++ knowledge. Stuff may look weird or plainly not work.
+* I have pulled in the following patches (some are quite old, and I had to modify them to fix conflicts):
+  * [Random Kick/Ban Reasons](https://github.com/mumble-voip/mumble/pull/175) by Zuko
+  * [Domain Name in UserInformation](https://github.com/mumble-voip/mumble/pull/1299) by Zuko
+  * [Support for Moving Multiple Users/Channels](https://github.com/mumble-voip/mumble/pull/1871) by austinliou
+* In addition, I have done the following:
+  * Removed a redundant setupView call in MainWindow.cpp. Side-effects unknown on non-Linux and Qt4, but on Linux with Qt5 it prevented the main window from showing up.
+
 Mumble - A voicechat utility for gamers
 =======================================
 
