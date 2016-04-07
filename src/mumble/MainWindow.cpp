@@ -355,10 +355,6 @@ void MainWindow::setupGui()  {
 
 	updateTransmitModeComboBox();
 
-#ifndef Q_OS_MAC
-	setupView(false);
-#endif
-
 	if (g.s.bMinimalView && ! g.s.qbaMinimalViewGeometry.isNull())
 		restoreGeometry(g.s.qbaMinimalViewGeometry);
 	else if (! g.s.bMinimalView && ! g.s.qbaMainWindowGeometry.isNull())
